@@ -1,20 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/pages/Home';
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Home from './components/Pages/Home'
 function App() {
   return (
-    <>
-      <Router> 
-        <Navbar/>
-        <Switch>
-          <Route path='/' exact component={Home} />
-        </Switch>
-      </Router>
-
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        {/* Add other routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 

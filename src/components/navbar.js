@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.css';
-import {Button} from './Button';
+import './navbar.css';
+import Button from './Button';
 
 function Navbar() {
   const [click, setClick] = useState(false);
